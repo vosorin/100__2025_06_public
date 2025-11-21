@@ -1,0 +1,88 @@
+
+    <html>
+    <head><title>FLOW.TO</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+.container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto auto;
+  gap: 20px;
+}
+img {
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  border: 1px solid #ccc;
+  object-fit: contain;
+}
+
+.cell {
+  padding: 10px;
+}
+.table-scroll {
+  max-height: 400px;
+  overflow-y: auto;
+  border: 1px solid #aaa;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th, td {
+  border: 1px solid #aaa;
+  padding: 5px;
+  text-align: left;
+  font-size: 14px;
+}
+.negative {
+  background: linear-gradient(to right, #ffdddd, white);
+}
+.positive {
+  background: linear-gradient(to right, white, #ddffdd);
+}
+.pos-light  { background: #e6ffe6; }  
+.pos-mid    { background: #99ff99; }  
+.pos-strong { background: #33cc33; }   
+
+.neg-light  { background: #ffe6e6; }   
+.neg-mid    { background: #ff9999; }   
+.neg-strong { background: #ff3333; }   
+
+h2 { border-bottom: 2px solid #444; }
+<script>
+function toggleText(id) {
+  const moreText = document.getElementById(id);
+  const btn = document.getElementById(id + "_btn");
+
+  if (moreText.style.display === "none") {
+    moreText.style.display = "inline";
+    btn.innerText = " Show less";
+  } else {
+    moreText.style.display = "none";
+    btn.innerText = " Show more";
+  }
+}
+</script>
+</style>
+</head>
+    <body>
+    <h2> FLOW.TO  <span style='color:orange; font-weight:800; margin-left:8px;'>nan</span>
+        <span style='font-weight:normal; font-size: 18px;'>(40d - quarterly earnings)</span>
+        <span style='color:black; font-weight:bold; font-size: 20px;'> </span>
+        <a href='https://finance.yahoo.com/chart/FLOW.TO?interval=1mo' target='_blank'>Yahoo</a>
+        <span style='font-weight:600;'>  — </span>
+    </h2>
+
+    <div class="container">
+        <div class="cell"><p><i>No image</i></p></div>
+        <div class="cell"><p><i>No image</i></p></div>
+        <div class="cell"><p><i>No image</i></p></div>
+        <div class="cell"><p><i>No relevant news in the last 30 days.</i></p></div>
+    </div>
+    </body>
+    </html>
+    
